@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-div{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.1)), url(../Assets/game\ level\ bg.jpg);
+    background-size: cover;
+}
+.game-level-div{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+}
+.difficulty-level-parent a{
+    background-color: rgb(16, 22, 24);
+    color: rgb(171, 169, 166);
+    border: none;
+    flex-grow: 1 !important;
+}
+
+
+:root{
+    --background-color: #0F172A;
+    --color: #E2E8F0;
+}
+
+
+.form-div{
+    
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+}
+label{
+    color: var(--background-color);
+    font-size: 20px;
+
+}
+input[type="text"]{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--color) !important ;
+    /* background-color:  rgb(171,   169, 166); */
+    background: none;
+    border: 1px solid white;
+    backdrop-filter: blur(3px) !important;
+}
+input[type="text"]::placeholder{
+    color: white;
+    
+}
+.submit-btn{
+    backdrop-filter: blur(3px) !important;
+    background-color:  rgb(171, 169, 166);
+    
+    
+}
+.result-span{
+    /* background-color:  rgb(171, 169, 166); */
+    /* background-color:var(--background-color) !important; */
+    backdrop-filter: blur(3px) !important;
+    color: var(--color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media (max-width:786px){
+    .form-div{
+        flex-grow: 1;
+    }
+    .game-level-div{
+        width: auto;
+        flex-grow: 1;
+    }
+}
